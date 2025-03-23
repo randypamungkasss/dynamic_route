@@ -5,3 +5,7 @@ from .models import Todo
 def index_view(request):
     todos = Todo.objects.all()
     return render(request, "index.html", {'todos': todos})
+
+
+def detail_view(request):
+    return render(request, "detail.html" {})
