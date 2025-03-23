@@ -9,7 +9,7 @@
     <h1>My Todos!</h1>
     <div>
       {% for todo in todos %}
-      <div>{{todo.title}}</div>
+      <a href="{% url 'detail-view' todo.id %}">{{todo.title}}</a>
       {% endfor %}
     </div>
   </body>
